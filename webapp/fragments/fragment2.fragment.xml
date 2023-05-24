@@ -1,0 +1,75 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
+    <Dialog id="idDialog">
+        <content>
+                     <f:SimpleForm  alignItems="Center" alignContent="Center" width="250px" items = "{Create>/results}" id = "frm1" height = "400px" title="Employee Data" class=".sapMFlexBoxBGTransparent">
+                <f:content>
+                                    <Label text=" Employee ID" />
+                                   <Input value ="{Create>/0/EmpId}" required = "true" id = "_idemp"  width = "70%" />
+
+                                   <Label text="Employee Name " />
+                                   <Input value ="{Create>/0/EmpName}" required = "true"  id = "_idname" width = "70%" />
+                                  
+                                    <Label text="Employee Phone " />
+                                   <Input value ="{Create>/0/EmpPhone}" required = "true"  id = "_idmob" width = "70%"  />
+
+                                    <Label text="Employee Email " />
+                                   <Input value ="{Create>/0/EmpEmail}" required = "true"  maxLength = "10" id = "_idemail" width = "70%"  />
+
+                                    <Label text="Employee Department" />
+                                   <Input value ="{Create>/0/EmpDep}" required = "true"  id = "_iddept" width = "70%" />
+
+                                    <Label text=" Basic Pay " />
+                                   <Input value ="{Create>/0/BasicPay}"  required = "true" id = "_idbpay"  width = "70%" />
+
+                                   <Label text="HRA " />
+                                   <Input value ="{Create>/0/Hra}" required = "true"  id = "_idhra" width = "70%" />
+                                  
+                                    <Label text="Special Allowance " />
+                                   <Input value ="{Create>/0/SplAllowance}" required = "true"  id = "_idspcl" width = "70%"  />
+
+                                    <Label text="Shift Allowance " />
+                                   <Input value ="{Create>/0/ShiftAllowance}" required = "true"  maxLength = "10" id = "_idshft" width = "70%"  />
+
+                                    <Label text="Monthly Pay " />
+                                   <Input value ="{Create>/0/MonthlyPay}" required = "true"  id = "_idmpay" width = "70%" />
+
+                                 
+                        </f:content>
+                    </f:SimpleForm>  
+
+           <HBox justifyContent="End" alignItems="Start">
+                <Button type="Transparent" text="Save" press="handleCreateStatement" />
+                <Button type="Transparent" text="cancel" press="onClose" />
+            </HBox>    
+
+             <!--      <f:SimpleForm id="idCreateUserForm" minWidth="1024" maxContainerCols="2" id = "frm1" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1" class="editableForm">
+                <f:content>
+                                   <Label text=" Name: " />
+                                   <Input value ="{Data1>name}"   id = "nam1"  width = "70%" />
+
+                                   <Label text="Employee Role: " />
+                                   <Input value ="{Data1>Zemprole}"   id = "rol1" width = "70%" />
+                                  
+                                    <Label text="Gender: " />
+                                   <Input value ="{Data1>Zgender}"  id = "gndr1" width = "70%"  />
+
+                                    <Label text="Number: " />
+                                   <Input value ="{Data1>Znumber}"   id = "nmbr1" width = "70%"  />
+
+                                    <Label text="Address: " />
+                                   <Input value ="{Data1>Zcity}"   id = "adrs1" width = "70%" />
+
+                </f:content>
+            </f:SimpleForm>
+
+            <beginButton>
+                <Button text="Save" type="Accept" press="onSave" />
+            </beginButton>
+
+            <endButton>
+                <Button text="Close" type="Reject" press="onClose" />
+            </endButton>    -->
+     
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

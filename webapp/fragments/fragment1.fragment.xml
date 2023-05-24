@@ -1,0 +1,95 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:m="sap.ui.webc.main"
+xmlns:f="sap.ui.layout.form" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:l="sap.ui.layout"
+ xmlns:c="sap.ui.core">
+    <Dialog id="pDialog">
+        <content>
+        <!-- <Text text = "Hello" />     --> 
+
+         <f:SimpleForm id="Form1" title = "Employee Record" >
+			<f:content>
+				<Label text="Employee ID" />
+				<!-- <Text text="{}" id = "eId" /> -->
+                <Input value ="{Data1>/results/0/EmpId}" id = "_idEmp1" />  
+
+                 <Label text="Employee Name" />
+				<!-- <Text text="{}" id = "eName" /> -->
+                <Input value ="{Data1>/results/0/EmpName}" id = "_idEmpNm1" />
+
+                  <Label text="Employee Phone" />
+				<!-- <Text text="{}" id = "eMob" /> -->
+                <Input value ="{Data1>/results/0/EmpPhone}"  id = "_idEmpmob1" />  
+
+                <Label text="Employee Email" />
+				<!-- <Text text="{}" id = "eEmail" /> -->
+                <Input value ="{Data1>/results/0/EmpEmail}" id = "_idEmpEml1"  />  
+
+                <Label text="Employee Department" />
+				<!-- <Text text="{}" id = "eDept" /> -->
+                <Input value ="{Data1>/results/0/EmpDep}" id = "_idEmpDep1"  />  
+
+                <Label text="Basic Pay" />
+				<!-- <Text text="{}" id = "ePay" /> -->
+                <Input value ="{Data1>/results/0/BasicPay}" id = "_idEmpBpay1"  />  
+
+                <Label text="HRA" />
+				<!-- <Text text="{}" id = "eHra" /> -->
+                <Input value ="{Data1>/results/0/Hra}"  id = "_idEmpHra1" />   
+
+                <Label text="Special Allowance" />
+				<!-- <Text text="{}" id = "eSpcl" /> -->
+                <Input value ="{Data1>/results/0/SplAllowance}"  id = "_idEmpSplA1" />   
+
+                <Label text="Shift Allowance" />
+				<!-- <Text text="{}" id = "eShft" /> -->
+                <Input value ="{Data1>/results/0/ShiftAllowance}" id = "_idEmpShftA1"  />  
+
+                <Label text="Monthly Pay" />
+				<!-- <Text text="{}" id = "eMPay" /> -->
+                <Input value ="{Data1>/results/0/MonthlyPay}" id = "_idEmpMP1"  />  
+
+				
+			</f:content>
+		</f:SimpleForm>
+
+
+         <!-- <Table  items = "{Data11>/results}" >  
+          
+           <columns>
+                    <Column >
+                        <Text text="Employee ID" />
+                    </Column>
+
+                     <Column >
+                        <Text text="Employee Name" />
+                     </Column>
+            </columns>
+
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                         
+                         //   <Input value =""  id = "idEmp1" />  
+                             <Text text = "{Data11>EmpId}" id = "idEmp1"  />
+
+                           //   <Input value ="" editable="false"  id = "idEmpNm"  />      
+                             <Text text = "{Data11>EmpName}" id = "idEmpNm"  />
+                           
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>     -->
+              
+       </content>
+
+       <beginButton>
+                <Button text="Show Detail" press="handleOkDialog"></Button>        
+       </beginButton>
+
+        <endButton>     
+                 <Button text="close" press="handleCloseDialog"></Button>
+        </endButton>
+
+    </Dialog>
+</core:FragmentDefinition>

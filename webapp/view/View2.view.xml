@@ -1,0 +1,59 @@
+<mvc:View controllerName="employeeprj.employeeodataproject.controller.View2" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Customer Details" titleAlignment="Center" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+        <!-- <FlexBox alignItems = "Start" height="100px" > -->
+            <f:SimpleForm title="Employee Details" 
+            layout="ResponsiveGridLayout">           	
+             
+                <f:content>
+
+                     <core:Title text="" />
+                    <Label text="Employee ID" />
+                    <Input value="{Data1>/EmpId}" id = "_idEmp1" width="50%" />
+                     <!-- <Input value="{}" id = "_idEmp1" width="35%" /> -->
+
+                    <Label text="Employee Name" />
+                    <Input value="{Data1>/EmpName}" id = "_idEmpNm1" width="50%" />
+                     <!-- <Input value="{}" id = "_idEmpNm1" width="35%" /> -->
+
+                    <Label text="Employee Phone" />
+                    <Input value="{Data1>/EmpPhone}" id = "_idEmpmob1" width="50%" />
+                     <!-- <Input value="{}" id = "_idEmpmob1" width="35%" /> -->
+
+                    <Label text="Employee Email" />
+                    <Input value="{Data1>/EmpEmail}" id = "_idEmpEml1" width="50%" />
+                     <!-- <Input value="{}" id = "_idEmpEml1" width="35%" /> -->
+
+                    <Label text="Employee Department" />
+                    <Input value="{Data1>/EmpDep}" id = "_idEmpDep1" width="50%" />
+                    <!-- <Input value="{}" id = "_idEmpDep1" width="35%" /> -->
+
+                    <core:Title text="" />
+
+                    <Label text="Basic Pay" />
+                    <Input value="{Data1>/BasicPay}" id = "_idEmpBpay1" width="50%" />
+                    <!-- <Input value="{}" id = "_idEmpBpay1" width="35%" /> -->
+
+                    <Label text="HRA" />
+                    <Input value="{Data1>/Hra}" id = "_idEmpHra1" width="50%" />
+                    <!-- <Input value="{}" id = "_idEmpHra1" width="35%" />  -->
+
+                    <Label text="Special Allowance" />
+                    <Input value="{Data1>/SplAllowance}" id = "_idEmpSplA1" width="50%" />
+                    <!-- <Input value="{}" id = "_idEmpSplA1" width="35%" /> -->
+
+                    <Label text="Shift Allowance" />
+                    <Input value="{Data1>/ShiftAllowance}" id = "_idEmpShftA1"  width="50%" />
+                     <!-- <Input value="{}" id = "_idEmpShftA1"  width="35%" /> -->
+
+                    <Label text="Monthly Pay" />
+                    <Input value="{Data1>/MonthlyPay}" id = "_idEmpMP1" width="50%" />
+                    <!-- <Input value="{}" id = "_idEmpMP1" width="35%" />  -->
+
+                </f:content>
+                
+            </f:SimpleForm>
+             <!-- </FlexBox> -->
+        </content>
+    </Page>
+</mvc:View>

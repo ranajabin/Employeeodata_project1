@@ -1,0 +1,46 @@
+/* Enter your custom styles here */
+
+/* .sapUiFormResLayout>div {
+    padding: 3rem;
+    box-sizing: border-box;
+} */
+
+.sapMLabel {
+    color: #085caf;
+    font-weight: bold;
+}
+
+.sapMInputBaseInner {
+    color: #eb1a9b;
+}
+
+.sapUiForm .sapUiFormTitle {
+    border-width: 3px;
+    border-color: #45cb0e;
+}
+
+.sapUiAFLayout {
+   background-color: rgb(239, 100, 252);
+}
+
+.sapMMessageToast {
+    background-color: rgb(139, 135, 139);
+    color: #e1f00d;
+    box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.42), 0 0.625rem 1.875rem 0 rgba(0,0,0,0.3);
+    border-radius: 0.5rem;
+}
+
+.sapMList {
+    background-color: rgb(248, 229, 142);   
+}
+
+.sapUiTableHeaderDataCell .sapMText, .sapMColumnHeader .sapMText {
+    font-weight: bold;
+    font-size: .875rem;
+    color: rgb(255, 196, 2);
+}
+
+.sapUiSizeCompact .sapMPageHeader .sapMIBar .sapMBarLeft, .sapUiSizeCompact .sapMPageFooter .sapMIBar .sapMBarLeft, .sapUiSizeCompact .sapMPageHeader .sapMIBar .sapMBarRight, .sapUiSizeCompact .sapMPageFooter .sapMIBar .sapMBarRight, .sapUiSizeCompact .sapMPageHeader .sapMIBar .sapMBarPH, .sapUiSizeCompact .sapMPageFooter .sapMIBar .sapMBarPH {
+    background-color: rgb(171, 165, 248);
+}
+
